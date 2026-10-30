@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173a34">
+  <meta name="description" content="Secure checkout for Zhixia Chinese lessons. Choose a single lesson, 10-lesson pack or 20-lesson pack. PayPal, card, WeChat Pay and Alipay supported.">
+  <meta property="og:title" content="Checkout — Zhixia Chinese">
+  <meta property="og:description" content="Choose your Chinese lesson package and complete your booking.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/teacher-portrait.svg">
+  <title>Checkout — Zhixia Chinese</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="alternate" hreflang="en" href="pay.html">
+  <link rel="alternate" hreflang="zh-Hans" href="pay-zh.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=Noto+Serif+SC:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="demo-bar" data-demo-only>
+    <span class="demo-dot" aria-hidden="true"></span>
+    Preview checkout — <strong>no card required, no real charge</strong>.
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4.5" y="10" width="15" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14.5v2"/>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3 4.5 6v6c0 4.6 3.1 7.6 7.5 9 4.4-1.4 7.5-4.4 7.5-9V6Z"/><path d="m8.8 12 2.1 2.1 4.4-4.4"/>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
+      </symbol>
+      <symbol id="icon-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/>
+      </symbol>
+      <symbol id="icon-paypal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7.5 20 10 4h5.2c2.6 0 4 1.3 3.6 3.6-.5 2.8-2.4 4.1-5.4 4.1H10"/><path d="M11.2 20 13 10h3.5c2.2 0 3.4 1.1 3.1 3-.4 2.3-2 3.4-4.5 3.4h-2"/>
+      </symbol>
+      <symbol id="icon-wechat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.2 5C5.8 5 2.5 7.7 2.5 11c0 1.9 1 3.5 2.8 4.7L4.5 19l3.2-1.7c.8.2 1.6.3 2.5.3.4 0 .8 0 1.2-.1"/>
+        <path d="M21.5 14.2c0-2.7-2.6-4.9-5.8-4.9s-5.8 2.2-5.8 4.9 2.6 4.9 5.8 4.9c.7 0 1.3-.1 1.9-.3l2.5 1.3-.6-2.1c1.2-.9 2-2.2 2-3.8Z"/>
+        <path d="M7 9.5h.01M12.5 9.5h.01M13 13.5h.01M17.5 13.5h.01"/>
+      </symbol>
+      <symbol id="icon-alipay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7 8h10M12 5v3M6 12h9M8 15h6M9 18c2.5-1 4.6-2.4 6.5-4.2M15.5 12v6"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m5 12 4.5 4.5L19 7"/>
+      </symbol>
+      <symbol id="icon-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="6" y="14" width="12" height="7" rx="1"/>
+      </symbol>
+      <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.4 2.5 3.6 5.5 3.6 9s-1.2 6.5-3.6 9c-2.4-2.5-3.6-5.5-3.6-9S9.6 5.5 12 3Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Zhixia Chinese home">
+        <span class="brand-mark" aria-hidden="true">夏</span>
+        <span class="brand-text">
+          <span class="brand-name">Zhixia <span lang="zh-Hans">知夏</span></span>
+          <span class="brand-sub">Chinese, made personal</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html#about">About</a></li>
+          <li><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="index.html#inquiry">Inquiry</a></li>
+          <li><a class="nav-link" href="pay.html" aria-current="page">Payment</a></li>
+        </ul>
+        <a class="nav-cta" href="index.html#inquiry">Book a free chat</a>
+        <a class="nav-lang" href="pay-zh.html" lang="zh-Hans" hreflang="zh-Hans" aria-label="切换至中文">中文</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="checkout-page" tabindex="-1">
+    <div class="container">
+      <div class="checkout-head">
+        <div>
+          <p class="eyebrow">Checkout · 付款</p>
+          <h1>A few details, then we begin.</h1>
+          <p class="lede">Choose your lesson package and preferred payment method. Your confirmation and scheduling link arrive by email right after checkout.</p>
+          <p class="zh-line" lang="zh-Hans">确认课程，安心付款。下一步，我们开始上课。</p>
+        </div>
+        <span class="checkout-secure">
+          <svg aria-hidden="true"><use href="#icon-lock"/></svg>
+          Secure checkout · USD
+        </span>
+      </div>
+
+      <ol class="checkout-steps" aria-label="Checkout progress" data-checkout-steps>
+        <li class="is-active" data-step="1"><span class="step-dot">1</span>Your details</li>
+        <li data-step="2"><span class="step-dot">2</span>Payment</li>
+        <li data-step="3"><span class="step-dot">3</span>Confirmation</li>
+      </ol>
+
+      <form class="checkout-layout" id="checkout-form" data-checkout-form method="post">
+        <div class="checkout-main">
+          <!-- Contact details -->
+          <section class="panel" aria-labelledby="details-title">
+            <div class="panel-head">
+              <div>
+                <h2 id="details-title">Your details</h2>
+                <p>So I can send your receipt and class materials.</p>
+              </div>
+              <span class="panel-kicker">Step 1 of 3</span>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="checkout-name">Full name <span aria-hidden="true">*</span></label>
+                <input type="text" id="checkout-name" name="name" autocomplete="name" placeholder="Your full name" required>
+              </div>
+              <div class="field">
+                <label for="checkout-email">Email <span aria-hidden="true">*</span></label>
+                <input type="email" id="checkout-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field">
+                <label for="checkout-country">Billing country <span aria-hidden="true">*</span></label>
+                <select id="checkout-country" name="country" autocomplete="country-name" required>
+                  <option value="" selected disabled>Select country</option>
+                  <option>Australia</option>
+                  <option>Brazil</option>
+                  <option>Canada</option>
+                  <option>China</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                  <option>Italy</option>
+                  <option>Japan</option>
+                  <option>Mexico</option>
+                  <option>Netherlands</option>
+                  <option>Singapore</option>
+                  <option>South Korea</option>
+                  <option>Spain</option>
+                  <option>Sweden</option>
+                  <option>Switzerland</option>
+                  <option>United Arab Emirates</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="checkout-timezone">Your time zone <span class="optional">(optional)</span></label>
+                <input type="text" id="checkout-timezone" name="timezone" placeholder="e.g. GMT+1 / Berlin">
+              </div>
+              <div class="field">
+                <label for="checkout-start">Preferred start date <span class="optional">(optional)</span></label>
+                <input type="date" id="checkout-start" name="startDate">
+              </div>
+              <div class="field">
+                <label for="checkout-phone">Phone / WhatsApp <span class="optional">(optional)</span></label>
+                <input type="tel" id="checkout-phone" name="phone" autocomplete="tel" placeholder="For scheduling only">
+              </div>
+            </div>
+          </section>
+
+          <!-- Package -->
+          <section class="panel" aria-labelledby="package-title">
+            <div class="panel-head">
+              <div>
+                <h2 id="package-title">Choose your pack</h2>
+                <p>All lessons are 55 minutes, one-to-one, online.</p>
+              </div>
+              <span class="panel-kicker">USD</span>
+            </div>
+
+            <div class="package-options" role="radiogroup" aria-label="Lesson package">
+              <label class="package-option">
+                <input type="radio" name="package" value="single">
+                <span class="package-option-inner">
+                  <span class="package-option-name">Single lesson</span>
+                  <span class="package-option-price">$45</span>
+                  <span class="package-option-meta">1 × 55 min · flexible</span>
+                </span>
+              </label>
+              <label class="package-option">
+                <span class="package-option-badge">Popular</span>
+                <input type="radio" name="package" value="ten" checked>
+                <span class="package-option-inner">
+                  <span class="package-option-name">10-lesson pack</span>
+                  <span class="package-option-price">$420</span>
+                  <span class="package-option-meta">10 × 55 min · $42 each</span>
+                </span>
+              </label>
+              <label class="package-option">
+                <input type="radio" name="package" value="twenty">
+                <span class="package-option-inner">
+                  <span class="package-option-name">20-lesson pack</span>
+                  <span class="package-option-price">$780</span>
+                  <span class="package-option-meta">20 × 55 min · $39 each</span>
+                </span>
+              </label>
+            </div>
+          </section>
+
+          <!-- Payment -->
+          <section class="panel" aria-labelledby="payment-title">
+            <div class="panel-head">
+              <div>
+                <h2 id="payment-title">Payment method</h2>
+                <p>Choose how you’d like to pay. Card details are never stored here.</p>
+              </div>
+              <span class="panel-kicker">Step 2 of 3</span>
+            </div>
+
+            <div class="payment-list" role="radiogroup" aria-label="Payment method">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Card" data-detail="You’ll continue to a secure Stripe checkout to enter your card details. Visa, Mastercard and American Express accepted." checked>
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-card"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">Credit / debit card</span>
+                    <span class="payment-option-note">Visa · Mastercard · Amex</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="PayPal" data-detail="You’ll continue to PayPal to pay with your balance, bank account or linked card.">
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-paypal"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">PayPal</span>
+                    <span class="payment-option-note">Fast &amp; buyer-protected</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="WeChat Pay" data-detail="Cross-border WeChat Pay opens a secure QR code on the next screen. Best for learners with a WeChat account.">
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-wechat"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">WeChat Pay</span>
+                    <span class="payment-option-note">Cross-border · QR code</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Alipay" data-detail="Cross-border Alipay continues to a secure payment page. International cards are supported.">
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-alipay"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">Alipay</span>
+                    <span class="payment-option-note">Cross-border · international cards</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+            </div>
+
+            <p class="payment-detail" data-payment-detail><strong>Card selected.</strong> You’ll continue to a secure Stripe checkout to enter your card details. Visa, Mastercard and American Express accepted.</p>
+
+            <div class="field field-spaced">
+              <label class="check-row">
+                <input type="checkbox" name="terms" required>
+                <span>I agree to the 24-hour rescheduling policy and understand that unused lessons are refundable under the fit guarantee. <span aria-hidden="true">*</span></span>
+              </label>
+              <p class="consent-links">Read the <a href="terms.html">lesson terms</a> and <a href="privacy.html">privacy policy</a>.</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="order-panel" aria-label="Order summary">
+          <div class="order-card">
+            <h2>Order summary</h2>
+            <p class="order-sub">1:1 online Chinese · 55 minutes</p>
+
+            <div class="order-package">
+              <span class="order-package-mark" data-order-mark aria-hidden="true">十</span>
+              <span class="order-package-copy">
+                <span class="order-package-name" data-order-name>10-lesson pack</span>
+                <span class="order-package-meta" data-order-meta>10 × 55-minute lessons</span>
+              </span>
+            </div>
+
+            <ul class="order-lines">
+              <li class="order-line"><span>Lessons</span><span class="value" data-order-lessons>10 × 55 min</span></li>
+              <li class="order-line"><span>Subtotal</span><span class="value" data-order-subtotal>$450.00</span></li>
+              <li class="order-line"><span>Processing fee</span><span class="value">$0.00</span></li>
+              <li class="order-line discount" data-savings-row><span>Package savings</span><span class="value" data-order-savings>−$30.00</span></li>
+            </ul>
+
+            <div class="order-total" aria-live="polite" aria-atomic="true">
+              <span>Total due today</span>
+              <strong><span data-order-total>$420</span> <small>USD</small></strong>
+            </div>
+
+            <ul class="order-perks">
+              <li>Personalized lesson plan included</li>
+              <li>Notes &amp; homework after every class</li>
+              <li>Free rescheduling up to 24 hours ahead</li>
+            </ul>
+          </div>
+
+          <div class="order-guarantee">
+            <span class="guarantee-icon"><svg aria-hidden="true"><use href="#icon-shield"/></svg></span>
+            <div>
+              <strong>Fit guarantee on unused lessons</strong>
+              <p>If the first lesson isn’t right for you, tell me within 7 days and I’ll refund the remaining unused lessons.</p>
+            </div>
+          </div>
+
+          <div class="checkout-submit-wrap">
+            <p class="form-error" data-checkout-error role="alert" hidden></p>
+            <button class="btn btn-primary checkout-submit" type="submit" data-pay-button>Pay $420 securely <span class="arrow" aria-hidden="true">→</span></button>
+            <p class="secure-fineprint"><svg aria-hidden="true"><use href="#icon-lock"/></svg>Payment details are handled by the provider · never stored here</p>
+            <p class="checkout-demo-note" data-demo-only>Preview mode: submitting will show a sample confirmation. No payment will be taken and no email will be sent.</p>
+          </div>
+        </aside>
+      </form>
+
+      <!-- Success -->
+      <section class="checkout-success" id="checkout-success" role="status" aria-live="polite" hidden tabindex="-1" aria-labelledby="success-title">
+        <div class="success-card">
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <p class="eyebrow is-centered" data-demo-only>Checkout preview</p>
+          <p class="eyebrow is-centered" data-success-live hidden>Payment complete</p>
+          <h2 class="success-title" id="success-title">You’re all set, <span data-success-first>friend</span>.</h2>
+          <p data-success-live hidden>A confirmation and your scheduling link are on their way to <strong data-success-email>your email</strong>. I can’t wait to meet you.</p>
+          <p data-success-demo>This is the end of the preview checkout. No payment was taken and no email was sent. In the live version, your receipt and scheduling link would arrive automatically.</p>
+
+          <div class="receipt">
+            <h2>Order receipt</h2>
+            <div class="receipt-line"><span>Order number</span><strong data-success-order>ZX-000000</strong></div>
+            <div class="receipt-line"><span>Date</span><strong data-success-date>30 October 2026</strong></div>
+            <div class="receipt-line"><span>Package</span><strong data-success-package>10-lesson pack</strong></div>
+            <div class="receipt-line"><span>Lessons</span><strong data-success-lessons>10 × 55 min</strong></div>
+            <div class="receipt-line"><span>Payment method</span><strong data-success-method>Card</strong></div>
+            <div class="receipt-line"><span>Email</span><strong data-success-email>you@example.com</strong></div>
+            <div class="receipt-line receipt-total"><span>Total paid</span><strong data-success-total>$420.00</strong></div>
+          </div>
+
+          <div class="next-steps">
+            <h2>What happens next</h2>
+            <ol>
+              <li><strong>Check your inbox</strong> for the receipt and a short welcome note from me.</li>
+              <li><strong>Pick your first time</strong> using the scheduling link — I’ll offer slots in your time zone.</li>
+              <li><strong>Join on Zoom or Google Meet.</strong> Bring a cup of tea and one thing you’d love to be able to say.</li>
+            </ol>
+          </div>
+
+          <div class="success-actions-row">
+            <button class="btn btn-secondary" type="button" data-print><svg width="14" height="14" aria-hidden="true"><use href="#icon-print"/></svg>Print receipt</button>
+            <a class="btn btn-primary" href="index.html">Back to homepage <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+          <p class="demo-success-note" data-demo-only>This confirmation is a design preview. Connect your payment provider and email service to send real receipts.</p>
+        </div>
+      </section>
+
+      <section class="checkout-faq" aria-labelledby="checkout-faq-title">
+        <div class="section-head centered reveal">
+          <p class="eyebrow">Payment &amp; lessons</p>
+          <h2 id="checkout-faq-title">Good to know.</h2>
+          <p class="lede">Simple policies, clear answers. Anything else, just ask before you pay.</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>How do I schedule lessons after paying?</summary>
+            <div class="faq-answer">
+              <p>Your confirmation includes a scheduling link. Choose a time that works in your time zone, and you’ll receive a calendar invite with the Zoom or Google Meet link. Most students book their first lesson within 48 hours.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Which payment methods do you accept?</summary>
+            <div class="faq-answer">
+              <p>Credit and debit cards (Visa, Mastercard, American Express), PayPal, and cross-border WeChat Pay or Alipay. All prices are in US dollars. Your bank may apply its own currency conversion fee — that is outside my control.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Can I reschedule a lesson?</summary>
+            <div class="faq-answer">
+              <p>Yes. Reschedule at least 24 hours before your lesson and there’s no charge. With less notice, the lesson counts as used, though I’ll always try to find a fair solution if something unexpected happens.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>What is the fit guarantee?</summary>
+            <div class="faq-answer">
+              <p>If after your first lesson you feel we’re not the right fit, email me within 7 days. I’ll refund the cost of all remaining unused lessons in your package — no awkward questions. The first lesson itself is non-refundable.</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>Are there any hidden fees?</summary>
+            <div class="faq-answer">
+              <p>No. The price you see is the price you pay, and I cover the payment processing fee. You only need your own internet connection and a free Zoom or Google Meet account. No registration or materials fee.</p>
+            </div>
+          </details>
+        </div>
+
+        <p class="checkout-secure checkout-faq-contact">
+          <svg aria-hidden="true"><use href="#icon-lock"/></svg>
+          Questions before paying? Email <a href="mailto:hello@zhixiachinese.com">hello@zhixiachinese.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Zhixia Chinese home">
+            <span class="brand-mark" aria-hidden="true">夏</span>
+            <span class="brand-text">
+              <span class="brand-name">Zhixia <span lang="zh-Hans">知夏</span></span>
+              <span class="brand-sub">Chinese, made personal</span>
+            </span>
+          </a>
+          <p class="footer-blurb">One-to-one online Chinese lessons for curious minds around the world. Based in Shanghai, teaching everywhere.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="index.html#about">About Zhixia</a></li>
+            <li><a href="index.html#pricing">Lessons &amp; pricing</a></li>
+            <li><a href="index.html#inquiry">Student inquiry</a></li>
+            <li><a href="pay.html">Payment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#checkout-faq-title">Payment FAQ</a></li>
+            <li><a href="index.html#faq">Lesson FAQ</a></li>
+            <li><a href="mailto:hello@zhixiachinese.com">Email Zhixia</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>Say hello</h3>
+          <a href="mailto:hello@zhixiachinese.com">hello@zhixiachinese.com</a>
+          <p>WeChat / WhatsApp details shared after inquiry.</p>
+          <p class="zh-note" lang="zh-Hans">期待和你一起说中文。</p>
+          <p data-demo-only>Preview contact address — replace before launch.</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> Zhixia Chinese. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+        <span class="footer-seal">English · <a href="pay-zh.html" lang="zh-Hans" hreflang="zh-Hans">中文</a> · Designed for learners everywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

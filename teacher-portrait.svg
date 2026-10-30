@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 900" role="img" aria-labelledby="portraitTitle portraitDesc">
+  <title id="portraitTitle">Illustrated portrait of Chinese teacher Lin Zhixia</title>
+  <desc id="portraitDesc">A warm editorial illustration of a Chinese language teacher with a dark bob, cream blouse and teal blazer, set against a soft blue-green arch.</desc>
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d9e9e0"/>
+      <stop offset="1" stop-color="#b9d4c9"/>
+    </linearGradient>
+    <linearGradient id="archWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf4e8"/>
+      <stop offset="1" stop-color="#f2e6d2"/>
+    </linearGradient>
+    <linearGradient id="blazer" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c5d54"/>
+      <stop offset="1" stop-color="#1e453f"/>
+    </linearGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#efc7a2"/>
+      <stop offset="1" stop-color="#e2ae84"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2c3b36"/>
+      <stop offset="1" stop-color="#182824"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#153f38" flood-opacity="0.20"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.045"/>
+      </feComponentTransfer>
+    </filter>
+    <clipPath id="frameClip">
+      <path d="M0 0H760V900H0Z"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frameClip)">
+    <rect width="760" height="900" fill="url(#wash)"/>
+
+    <!-- Painted backdrop -->
+    <circle cx="604" cy="206" r="178" fill="#e7b878" opacity="0.52"/>
+    <path d="M76 900V324C76 187 187 76 324 76H436C573 76 684 187 684 324V900Z" fill="url(#archWash)"/>
+    <path d="M108 900V334C108 209 209 108 334 108H426C551 108 652 209 652 334V900" fill="none" stroke="#244f48" stroke-opacity="0.18" stroke-width="2"/>
+    <circle cx="380" cy="372" r="252" fill="none" stroke="#2f6f65" stroke-opacity="0.10" stroke-width="1.5" stroke-dasharray="3 9"/>
+
+    <!-- Abstract leaves -->
+    <g fill="none" stroke="#2f6f65" stroke-opacity="0.30" stroke-width="2">
+      <path d="M114 615C156 568 185 510 190 451"/>
+      <path d="M145 574C130 548 124 526 128 502C153 509 169 528 173 550"/>
+      <path d="M165 531C156 504 158 482 168 460C188 477 195 497 190 517"/>
+      <path d="M644 666C624 611 620 551 631 492"/>
+      <path d="M634 600C651 578 660 557 660 535C637 539 622 555 615 574"/>
+      <path d="M628 545C625 518 631 496 645 478C660 498 663 519 655 538"/>
+    </g>
+
+    <!-- Hair behind head and shoulders -->
+    <path d="M265 393C242 286 294 189 385 181C481 172 541 243 526 360C519 417 531 478 560 537C575 568 564 608 534 626C508 642 478 627 464 596C448 561 438 507 433 458L329 458C322 513 311 558 293 593C274 629 239 640 213 619C190 601 190 567 203 536C227 480 251 445 265 393Z" fill="url(#hair)"/>
+    <circle cx="523" cy="220" r="47" fill="#1f312c"/>
+    <path d="M499 205C507 184 528 174 548 181C563 186 573 200 574 217C553 225 525 224 499 205Z" fill="#3a4a44" opacity="0.75"/>
+
+    <!-- Neck -->
+    <path d="M337 430H424V521C424 550 404 571 380 571C356 571 337 550 337 521Z" fill="url(#skin)"/>
+    <path d="M337 447C356 475 404 478 424 448V468C406 493 356 493 337 468Z" fill="#c98d64" opacity="0.35"/>
+
+    <!-- Face -->
+    <path d="M284 330C284 247 322 199 380 199C438 199 477 247 477 330V357C477 426 436 480 380 480C324 480 284 426 284 357Z" fill="url(#skin)"/>
+    <ellipse cx="278" cy="365" rx="19" ry="30" fill="#e5b189"/>
+    <ellipse cx="483" cy="365" rx="19" ry="30" fill="#e5b189"/>
+    <path d="M284 348C292 321 301 301 318 284C333 269 350 222 387 218C424 214 456 246 465 274C474 302 481 323 477 357C463 305 438 282 411 274C391 289 360 294 322 288C308 309 294 329 284 348Z" fill="url(#hair)"/>
+    <path d="M292 342C298 308 319 281 350 274C335 307 335 345 343 382C322 374 304 361 292 342Z" fill="#31433d" opacity="0.45"/>
+
+    <!-- Brows -->
+    <path d="M323 324C337 313 354 312 367 318" fill="none" stroke="#503c32" stroke-width="5" stroke-linecap="round"/>
+    <path d="M395 318C409 311 427 312 440 323" fill="none" stroke="#503c32" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Eyes -->
+    <path d="M325 347C334 337 352 337 363 347C354 357 335 357 325 347Z" fill="#fffaf1"/>
+    <path d="M397 347C407 337 425 337 435 347C425 357 406 357 397 347Z" fill="#fffaf1"/>
+    <circle cx="346" cy="347" r="7.2" fill="#2e2822"/>
+    <circle cx="414" cy="347" r="7.2" fill="#2e2822"/>
+    <circle cx="343.5" cy="344" r="2.1" fill="#fffdf7"/>
+    <circle cx="411.5" cy="344" r="2.1" fill="#fffdf7"/>
+    <path d="M325 346C335 334 353 334 363 345" fill="none" stroke="#3b2f28" stroke-width="4" stroke-linecap="round"/>
+    <path d="M397 345C408 334 426 334 436 346" fill="none" stroke="#3b2f28" stroke-width="4" stroke-linecap="round"/>
+    <path d="M326 346L320 342M362 345L368 341M398 345L392 341M435 346L441 342" stroke="#3b2f28" stroke-width="2" stroke-linecap="round"/>
+
+    <!-- Nose and smile -->
+    <path d="M380 355C377 373 373 386 369 394C375 400 385 401 392 396" fill="none" stroke="#bd7f5e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M353 420C366 432 394 432 408 419C396 442 366 442 353 420Z" fill="#b96058"/>
+    <path d="M353 420C367 426 394 426 408 419" fill="none" stroke="#8f4945" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="320" cy="389" rx="24" ry="13" fill="#d98c76" opacity="0.22"/>
+    <ellipse cx="440" cy="389" rx="24" ry="13" fill="#d98c76" opacity="0.22"/>
+
+    <!-- Earrings -->
+    <path d="M271 391C259 404 260 423 273 430C285 423 285 404 274 391" fill="none" stroke="#c89b52" stroke-width="4"/>
+    <path d="M488 391C500 404 499 423 486 430C474 423 474 404 485 391" fill="none" stroke="#c89b52" stroke-width="4"/>
+
+    <!-- Blouse and blazer -->
+    <path d="M328 545C283 563 247 594 226 642C204 692 194 794 192 900H568C566 794 556 692 534 642C513 594 477 563 432 545L380 596Z" fill="#f2e4d0"/>
+    <path d="M380 596L328 545C288 561 254 586 230 626L318 708L380 642L442 708L530 626C506 586 472 561 432 545Z" fill="url(#blazer)"/>
+    <path d="M328 545L380 596L432 545C415 536 401 529 380 529C359 529 345 536 328 545Z" fill="#e8d4bc"/>
+    <path d="M318 708L292 900H468L442 708L380 642Z" fill="#f2e4d0"/>
+    <path d="M380 642V900" stroke="#d8c1a6" stroke-width="2" opacity="0.65"/>
+    <path d="M352 575C363 587 370 599 380 615C390 599 397 587 408 575" fill="none" stroke="#d9c2a8" stroke-width="3"/>
+    <circle cx="380" cy="625" r="3.8" fill="#c89b52"/>
+    <path d="M344 552C333 583 319 609 294 632M416 552C427 583 441 609 466 632" fill="none" stroke="#3c6a60" stroke-width="2.5" opacity="0.7"/>
+
+    <!-- Arms crossed at the base -->
+    <path d="M206 808C241 770 300 764 343 788L380 808L415 788C458 764 517 770 553 808C573 830 577 858 567 900H194C184 858 188 830 206 808Z" fill="url(#blazer)"/>
+    <path d="M343 788C310 789 282 803 264 824C245 847 246 873 263 886C281 899 304 892 321 874L357 833L380 808Z" fill="#e9bb92"/>
+    <path d="M417 788C450 789 478 803 496 824C515 847 514 873 497 886C479 899 456 892 439 874L403 833L380 808Z" fill="#e9bb92"/>
+    <path d="M272 827C288 822 307 830 319 847C329 861 329 877 320 887" fill="none" stroke="#c48f68" stroke-width="2.4"/>
+    <path d="M488 827C472 822 453 830 441 847C431 861 431 877 440 887" fill="none" stroke="#c48f68" stroke-width="2.4"/>
+    <path d="M322 887C338 880 356 887 363 900H301C306 894 313 890 322 887Z" fill="#e9bb92"/>
+    <path d="M438 887C422 880 404 887 397 900H459C454 894 447 890 438 887Z" fill="#e9bb92"/>
+
+    <!-- Notebook -->
+    <g transform="rotate(-4 380 830)" filter="url(#softShadow)">
+      <rect x="288" y="786" width="184" height="120" rx="8" fill="#fbf3e2"/>
+      <rect x="288" y="786" width="24" height="120" rx="8" fill="#d8896b"/>
+      <path d="M330 821H438M330 843H420M330 865H398" stroke="#2f6f65" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+      <rect x="404" y="806" width="45" height="45" rx="4" fill="#2f6f65"/>
+      <text x="426.5" y="838" font-family="Georgia, serif" font-size="25" fill="#f8f2e7" text-anchor="middle">汉</text>
+    </g>
+
+    <!-- Small decorative marks -->
+    <g fill="#2f6f65" opacity="0.55">
+      <path d="M163 285L167 297L179 301L167 305L163 317L159 305L147 301L159 297Z"/>
+      <circle cx="616" cy="405" r="4"/>
+      <circle cx="612" cy="424" r="2.5"/>
+    </g>
+    <path d="M138 357C165 347 189 353 209 372" fill="none" stroke="#d8896b" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Grain -->
+    <rect width="760" height="900" filter="url(#grain)" opacity="0.9"/>
+  </g>
+</svg>

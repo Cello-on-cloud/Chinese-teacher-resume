@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#173a34">
+  <meta name="description" content="知夏中文安全付款页：选择单节课、10 节课程包或 20 节课程包，支持信用卡、PayPal、微信支付与支付宝跨境付款。">
+  <meta property="og:title" content="付款 — 知夏中文">
+  <meta property="og:description" content="选择中文课程包并完成报名，支持多种付款方式。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/teacher-portrait.svg">
+  <title>付款 — 知夏中文</title>
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="alternate" hreflang="zh-Hans" href="pay-zh.html">
+  <link rel="alternate" hreflang="en" href="pay.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=Noto+Serif+SC:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <div class="demo-bar" data-demo-only>
+    <span class="demo-dot" aria-hidden="true"></span>
+    预览付款 — <strong>无需银行卡，不会产生真实扣款</strong>。
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="icon-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4.5" y="10" width="15" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3M12 14.5v2"/>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 3 4.5 6v6c0 4.6 3.1 7.6 7.5 9 4.4-1.4 7.5-4.4 7.5-9V6Z"/><path d="m8.8 12 2.1 2.1 4.4-4.4"/>
+      </symbol>
+      <symbol id="icon-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 9.5h19M6 15h4"/>
+      </symbol>
+      <symbol id="icon-paypal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M7.5 20 10 4h5.2c2.6 0 4 1.3 3.6 3.6-.5 2.8-2.4 4.1-5.4 4.1H10"/><path d="M11.2 20 13 10h3.5c2.2 0 3.4 1.1 3.1 3-.4 2.3-2 3.4-4.5 3.4h-2"/>
+      </symbol>
+      <symbol id="icon-wechat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.2 5C5.8 5 2.5 7.7 2.5 11c0 1.9 1 3.5 2.8 4.7L4.5 19l3.2-1.7c.8.2 1.6.3 2.5.3.4 0 .8 0 1.2-.1"/>
+        <path d="M21.5 14.2c0-2.7-2.6-4.9-5.8-4.9s-5.8 2.2-5.8 4.9 2.6 4.9 5.8 4.9c.7 0 1.3-.1 1.9-.3l2.5 1.3-.6-2.1c1.2-.9 2-2.2 2-3.8Z"/>
+        <path d="M7 9.5h.01M12.5 9.5h.01M13 13.5h.01M17.5 13.5h.01"/>
+      </symbol>
+      <symbol id="icon-alipay" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7 8h10M12 5v3M6 12h9M8 15h6M9 18c2.5-1 4.6-2.4 6.5-4.2M15.5 12v6"/>
+      </symbol>
+      <symbol id="icon-print" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2"/><rect x="6" y="14" width="12" height="7" rx="1"/>
+      </symbol>
+      <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m5 12 4.5 4.5L19 7"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="brand" href="index-zh.html" aria-label="知夏中文首页">
+        <span class="brand-mark" aria-hidden="true">夏</span>
+        <span class="brand-text">
+          <span class="brand-name">知夏 <span lang="en">Zhixia</span></span>
+          <span class="brand-sub">把中文，学进生活里</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="主导航">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index-zh.html#about">简介</a></li>
+          <li><a class="nav-link" href="index-zh.html#pricing">课程价格</a></li>
+          <li><a class="nav-link" href="index-zh.html#inquiry">填写咨询</a></li>
+          <li><a class="nav-link" href="pay-zh.html" aria-current="page">付款</a></li>
+        </ul>
+        <a class="nav-cta" href="index-zh.html#inquiry">预约免费咨询</a>
+        <a class="nav-lang" href="pay.html" lang="en" hreflang="en" aria-label="Switch to English">EN</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="打开导航" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="checkout-page" tabindex="-1">
+    <div class="container">
+      <div class="checkout-head">
+        <div>
+          <p class="eyebrow">付款 · Checkout</p>
+          <h1>确认信息，然后开始。</h1>
+          <p class="lede">选择课程包和付款方式。付款后，确认信和预约链接会发送到你的邮箱。</p>
+          <p class="zh-line" lang="en">A few details, then we begin.</p>
+        </div>
+        <span class="checkout-secure">
+          <svg aria-hidden="true"><use href="#icon-lock"/></svg>
+          安全付款 · 美元
+        </span>
+      </div>
+
+      <ol class="checkout-steps" aria-label="付款进度" data-checkout-steps>
+        <li class="is-active" data-step="1"><span class="step-dot">1</span>你的信息</li>
+        <li data-step="2"><span class="step-dot">2</span>付款</li>
+        <li data-step="3"><span class="step-dot">3</span>确认</li>
+      </ol>
+
+      <form class="checkout-layout" id="checkout-form" data-checkout-form method="post">
+        <div class="checkout-main">
+          <section class="panel" aria-labelledby="details-title">
+            <div class="panel-head">
+              <div>
+                <h2 id="details-title">你的信息</h2>
+                <p>用于发送收据和课程材料。</p>
+              </div>
+              <span class="panel-kicker">第 1 步 / 共 3 步</span>
+            </div>
+
+            <div class="form-grid">
+              <div class="field">
+                <label for="checkout-name">姓名 <span aria-hidden="true">*</span></label>
+                <input type="text" id="checkout-name" name="name" autocomplete="name" placeholder="你的姓名" required>
+              </div>
+              <div class="field">
+                <label for="checkout-email">邮箱 <span aria-hidden="true">*</span></label>
+                <input type="email" id="checkout-email" name="email" autocomplete="email" placeholder="you@example.com" required>
+              </div>
+              <div class="field">
+                <label for="checkout-country">账单国家 <span aria-hidden="true">*</span></label>
+                <select id="checkout-country" name="country" autocomplete="country-name" required>
+                  <option value="" selected disabled>选择国家</option>
+                  <option value="Australia">澳大利亚</option>
+                  <option value="Brazil">巴西</option>
+                  <option value="Canada">加拿大</option>
+                  <option value="China">中国</option>
+                  <option value="France">法国</option>
+                  <option value="Germany">德国</option>
+                  <option value="Italy">意大利</option>
+                  <option value="Japan">日本</option>
+                  <option value="Mexico">墨西哥</option>
+                  <option value="Netherlands">荷兰</option>
+                  <option value="Singapore">新加坡</option>
+                  <option value="South Korea">韩国</option>
+                  <option value="Spain">西班牙</option>
+                  <option value="Sweden">瑞典</option>
+                  <option value="Switzerland">瑞士</option>
+                  <option value="United Arab Emirates">阿联酋</option>
+                  <option value="United Kingdom">英国</option>
+                  <option value="United States">美国</option>
+                  <option value="Other">其他</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="checkout-timezone">你的时区 <span class="optional">（选填）</span></label>
+                <input type="text" id="checkout-timezone" name="timezone" placeholder="例如：GMT+1 / 柏林">
+              </div>
+              <div class="field">
+                <label for="checkout-start">希望开始日期 <span class="optional">（选填）</span></label>
+                <input type="date" id="checkout-start" name="startDate">
+              </div>
+              <div class="field">
+                <label for="checkout-phone">电话 / WhatsApp <span class="optional">（选填）</span></label>
+                <input type="tel" id="checkout-phone" name="phone" autocomplete="tel" placeholder="仅用于安排课程">
+              </div>
+            </div>
+          </section>
+
+          <section class="panel" aria-labelledby="package-title">
+            <div class="panel-head">
+              <div>
+                <h2 id="package-title">选择课程包</h2>
+                <p>所有课程均为 55 分钟一对一线上课。</p>
+              </div>
+              <span class="panel-kicker">美元</span>
+            </div>
+
+            <div class="package-options" role="radiogroup" aria-label="课程套餐">
+              <label class="package-option">
+                <input type="radio" name="package" value="single">
+                <span class="package-option-inner">
+                  <span class="package-option-name">单节课</span>
+                  <span class="package-option-price">$45</span>
+                  <span class="package-option-meta">1 × 55 分钟 · 灵活</span>
+                </span>
+              </label>
+              <label class="package-option">
+                <span class="package-option-badge">最受欢迎</span>
+                <input type="radio" name="package" value="ten" checked>
+                <span class="package-option-inner">
+                  <span class="package-option-name">10 节课程包</span>
+                  <span class="package-option-price">$420</span>
+                  <span class="package-option-meta">10 × 55 分钟 · 每节 $42</span>
+                </span>
+              </label>
+              <label class="package-option">
+                <input type="radio" name="package" value="twenty">
+                <span class="package-option-inner">
+                  <span class="package-option-name">20 节课程包</span>
+                  <span class="package-option-price">$780</span>
+                  <span class="package-option-meta">20 × 55 分钟 · 每节 $39</span>
+                </span>
+              </label>
+            </div>
+          </section>
+
+          <section class="panel" aria-labelledby="payment-title">
+            <div class="panel-head">
+              <div>
+                <h2 id="payment-title">付款方式</h2>
+                <p>选择你的付款方式。本网站不会保存银行卡信息。</p>
+              </div>
+              <span class="panel-kicker">第 2 步 / 共 3 步</span>
+            </div>
+
+            <div class="payment-list" role="radiogroup" aria-label="付款方式">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Card" data-detail="接下来会进入安全支付页面填写银行卡信息。支持 Visa、Mastercard 和 American Express。" checked>
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-card"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">信用卡 / 借记卡</span>
+                    <span class="payment-option-note">Visa · Mastercard · Amex</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="PayPal" data-detail="接下来会跳转到 PayPal，使用账户余额、银行账户或绑定的银行卡付款。">
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-paypal"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">PayPal</span>
+                    <span class="payment-option-note">快捷 · 买家保障</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="WeChat Pay" data-detail="跨境微信支付将在下一步显示安全二维码。适合有微信账户的学员。">
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-wechat"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">微信支付</span>
+                    <span class="payment-option-note">跨境 · 扫码支付</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Alipay" data-detail="跨境支付宝会进入安全付款页面。支持国际银行卡。">
+                <span class="payment-option-inner">
+                  <span class="payment-logo"><svg aria-hidden="true"><use href="#icon-alipay"/></svg></span>
+                  <span class="payment-option-text">
+                    <span class="payment-option-name">支付宝</span>
+                    <span class="payment-option-note">跨境 · 支持国际卡</span>
+                  </span>
+                  <span class="payment-check" aria-hidden="true">✓</span>
+                </span>
+              </label>
+            </div>
+
+            <p class="payment-detail" data-payment-detail><strong>已选择信用卡 / 借记卡。</strong>接下来会进入安全支付页面填写银行卡信息。支持 Visa、Mastercard 和 American Express。</p>
+
+            <div class="field field-spaced">
+              <label class="check-row">
+                <input type="checkbox" name="terms" required>
+                <span>我同意提前 24 小时改期规则，并了解未使用课时可按适配保证退款。<span aria-hidden="true">*</span></span>
+              </label>
+              <p class="consent-links">阅读<a href="terms-zh.html">课程条款</a>和<a href="privacy-zh.html">隐私政策</a>。</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="order-panel" aria-label="订单摘要">
+          <div class="order-card">
+            <h2>订单摘要</h2>
+            <p class="order-sub">一对一线上中文 · 55 分钟</p>
+
+            <div class="order-package">
+              <span class="order-package-mark" data-order-mark aria-hidden="true">十</span>
+              <span class="order-package-copy">
+                <span class="order-package-name" data-order-name>10 节课程包</span>
+                <span class="order-package-meta" data-order-meta>10 节 × 55 分钟</span>
+              </span>
+            </div>
+
+            <ul class="order-lines">
+              <li class="order-line"><span>课时</span><span class="value" data-order-lessons>10 × 55 分钟</span></li>
+              <li class="order-line"><span>小计</span><span class="value" data-order-subtotal>$450.00</span></li>
+              <li class="order-line"><span>手续费</span><span class="value">$0.00</span></li>
+              <li class="order-line discount" data-savings-row><span>套餐优惠</span><span class="value" data-order-savings>−$30.00</span></li>
+            </ul>
+
+            <div class="order-total" aria-live="polite" aria-atomic="true">
+              <span>今日应付</span>
+              <strong><span data-order-total>$420</span> <small>USD</small></strong>
+            </div>
+
+            <ul class="order-perks">
+              <li>包含专属学习计划</li>
+              <li>每节课后笔记与作业</li>
+              <li>提前 24 小时免费改期</li>
+            </ul>
+          </div>
+
+          <div class="order-guarantee">
+            <span class="guarantee-icon"><svg aria-hidden="true"><use href="#icon-shield"/></svg></span>
+            <div>
+              <strong>未使用课时可退</strong>
+              <p>如果第一节课后觉得不合适，请在 7 天内告诉我，我会退还未使用的课时费用。</p>
+            </div>
+          </div>
+
+          <div class="checkout-submit-wrap">
+            <p class="form-error" data-checkout-error role="alert" hidden></p>
+            <button class="btn btn-primary checkout-submit" type="submit" data-pay-button>支付 $420 <span class="arrow" aria-hidden="true">→</span></button>
+            <p class="secure-fineprint"><svg aria-hidden="true"><use href="#icon-lock"/></svg>付款信息由支付服务商处理 · 本网站不会保存</p>
+            <p class="checkout-demo-note" data-demo-only>预览模式：提交后会显示示例确认页。不会产生真实扣款，也不会发送邮件。</p>
+          </div>
+        </aside>
+      </form>
+
+      <section class="checkout-success" id="checkout-success" role="status" aria-live="polite" hidden tabindex="-1" aria-labelledby="success-title">
+        <div class="success-card">
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <p class="eyebrow is-centered" data-demo-only>付款预览</p>
+          <p class="eyebrow is-centered" data-success-live hidden>付款完成</p>
+          <h2 class="success-title" id="success-title">都准备好了，<span data-success-first>朋友</span>。</h2>
+          <p data-success-live hidden>确认信和预约链接正在发送到 <strong data-success-email>你的邮箱</strong>。很期待见到你。</p>
+          <p data-success-demo>预览付款流程到这里结束。没有产生真实扣款，也没有发送邮件。正式上线后，收据和预约链接会自动发送。</p>
+
+          <div class="receipt">
+            <h2>订单收据</h2>
+            <div class="receipt-line"><span>订单号</span><strong data-success-order>ZX-000000</strong></div>
+            <div class="receipt-line"><span>日期</span><strong data-success-date>2026年10月30日</strong></div>
+            <div class="receipt-line"><span>课程包</span><strong data-success-package>10 节课程包</strong></div>
+            <div class="receipt-line"><span>课时</span><strong data-success-lessons>10 × 55 分钟</strong></div>
+            <div class="receipt-line"><span>付款方式</span><strong data-success-method>信用卡 / 借记卡</strong></div>
+            <div class="receipt-line"><span>邮箱</span><strong data-success-email>you@example.com</strong></div>
+            <div class="receipt-line receipt-total"><span>实付金额</span><strong data-success-total>$420.00</strong></div>
+          </div>
+
+          <div class="next-steps">
+            <h2>接下来</h2>
+            <ol>
+              <li><strong>查看邮箱</strong>，查收收据和我的一封简短欢迎信。</li>
+              <li><strong>选择第一节课时间</strong>，预约链接里会提供你所在时区的可选时段。</li>
+              <li><strong>通过 Zoom 或 Google Meet 上课</strong>。带上一杯茶，和一个你最想学会表达的句子。</li>
+            </ol>
+          </div>
+
+          <div class="success-actions-row">
+            <button class="btn btn-secondary" type="button" data-print><svg width="14" height="14" aria-hidden="true"><use href="#icon-print"/></svg>打印收据</button>
+            <a class="btn btn-primary" href="index-zh.html">返回首页 <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+          <p class="demo-success-note" data-demo-only>这份确认仅为设计预览。接入真实支付服务与邮件服务后，才会发送正式收据。</p>
+        </div>
+      </section>
+
+      <section class="checkout-faq" aria-labelledby="checkout-faq-title">
+        <div class="section-head centered reveal">
+          <p class="eyebrow">付款与课程 · Payment &amp; lessons</p>
+          <h2 id="checkout-faq-title">你需要知道的。</h2>
+          <p class="lede">规则简单，回答清楚。付款前还有问题，随时问我。</p>
+        </div>
+
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>付款后怎么预约课程？</summary>
+            <div class="faq-answer">
+              <p>确认信里会附上预约链接。选择适合你时区的时间后，你会收到带有 Zoom 或 Google Meet 链接的日历邀请。大多数学员会在 48 小时内约好第一节课。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>接受哪些付款方式？</summary>
+            <div class="faq-answer">
+              <p>支持信用卡和借记卡（Visa、Mastercard、American Express）、PayPal，以及跨境微信支付或支付宝。所有价格以美元计。你的银行可能会收取自己的货币转换费，这部分不在我的控制范围内。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>可以改期吗？</summary>
+            <div class="faq-answer">
+              <p>可以。请至少提前 24 小时改期，不收取费用。通知时间不足 24 小时，该节课会记作已使用；如果遇到突发情况，我会尽量找到公平的解决方式。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>什么是未使用课时退款保证？</summary>
+            <div class="faq-answer">
+              <p>如果第一节课后觉得我们不合适，请在 7 天内发邮件告诉我。我会退还未使用的课时费用，不需要尴尬的解释。第一节课本身不退款。</p>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary>有隐藏费用吗？</summary>
+            <div class="faq-answer">
+              <p>没有。你看到的价格就是需要支付的价格，支付手续费由我承担。你只需要自己的网络连接，以及一个免费的 Zoom 或 Google Meet 账户。没有注册费或材料费。</p>
+            </div>
+          </details>
+        </div>
+
+        <p class="checkout-secure checkout-faq-contact">
+          <svg aria-hidden="true"><use href="#icon-lock"/></svg>
+          付款前有疑问？发邮件至 <a href="mailto:hello@zhixiachinese.com">hello@zhixiachinese.com</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="brand" href="index-zh.html" aria-label="知夏中文首页">
+            <span class="brand-mark" aria-hidden="true">夏</span>
+            <span class="brand-text">
+              <span class="brand-name">知夏 <span lang="en">Zhixia</span></span>
+              <span class="brand-sub">把中文，学进生活里</span>
+            </span>
+          </a>
+          <p class="footer-blurb">为全世界的学习者提供一对一线上中文课程。常驻上海，面向世界。</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>浏览</h3>
+          <ul>
+            <li><a href="index-zh.html#about">关于知夏</a></li>
+            <li><a href="index-zh.html#pricing">课程与价格</a></li>
+            <li><a href="index-zh.html#inquiry">学员咨询</a></li>
+            <li><a href="pay-zh.html">付款</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>支持</h3>
+          <ul>
+            <li><a href="#checkout-faq-title">付款常见问题</a></li>
+            <li><a href="index-zh.html#faq">课程常见问题</a></li>
+            <li><a href="mailto:hello@zhixiachinese.com">邮件联系知夏</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h3>打个招呼</h3>
+          <a href="mailto:hello@zhixiachinese.com">hello@zhixiachinese.com</a>
+          <p>微信 / WhatsApp 信息将在咨询后提供。</p>
+          <p class="zh-note" lang="zh-Hans">期待和你一起说中文。</p>
+          <p data-demo-only>预览联系邮箱——上线前请替换。</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> 知夏中文 · 保留所有权利。</p>
+        <nav class="footer-legal" aria-label="法律信息">
+          <a href="privacy-zh.html">隐私政策</a>
+          <a href="terms-zh.html">课程条款</a>
+        </nav>
+        <span class="footer-seal"><a href="pay.html" lang="en" hreflang="en">English</a> · 中文 · 为全世界的学习者设计</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

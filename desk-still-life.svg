@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 820" role="img" aria-labelledby="deskTitle deskDesc">
+  <title id="deskTitle">A Chinese teacher's desk</title>
+  <desc id="deskDesc">An illustrated flat-lay of an open Chinese lesson notebook with the words ni hao, a cup of tea, flashcards, a pencil and a small plant.</desc>
+  <defs>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eadfc9"/>
+      <stop offset="1" stop-color="#dccdb3"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0" stop-color="#fffdf7"/>
+      <stop offset="1" stop-color="#f4ecdc"/>
+    </linearGradient>
+    <linearGradient id="tea" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#b96d4c"/>
+      <stop offset="1" stop-color="#7d432f"/>
+    </linearGradient>
+    <filter id="lift" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#563d28" flood-opacity="0.18"/>
+    </filter>
+    <filter id="soft" x="-30%" y="-30%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#563d28" flood-opacity="0.13"/>
+    </filter>
+  </defs>
+
+  <rect width="700" height="820" fill="url(#desk)"/>
+  <g stroke="#8f7655" stroke-opacity="0.14" stroke-width="1">
+    <path d="M0 95H700M0 255H700M0 420H700M0 585H700M0 745H700"/>
+    <path d="M118 0V820M278 0V820M462 0V820M610 0V820"/>
+  </g>
+  <circle cx="612" cy="99" r="126" fill="#f4ead9" opacity="0.64"/>
+  <circle cx="80" cy="720" r="160" fill="#c7b596" opacity="0.22"/>
+
+  <!-- Plant -->
+  <g filter="url(#soft)">
+    <ellipse cx="111" cy="295" rx="73" ry="14" fill="#8f7655" opacity="0.16"/>
+    <path d="M74 248H145L137 294H82Z" fill="#ba6f50"/>
+    <path d="M74 248H145" stroke="#a45d43" stroke-width="5"/>
+    <path d="M108 247C101 207 98 184 104 151" fill="none" stroke="#416c56" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M108 194C86 184 76 165 79 142C101 146 116 162 118 181Z" fill="#5f8a6f"/>
+    <path d="M108 176C125 162 135 144 132 123C110 129 101 144 100 160Z" fill="#7ca086"/>
+    <path d="M107 219C126 210 139 194 142 174C121 175 108 187 102 203Z" fill="#4e7c63"/>
+    <path d="M100 232C84 224 70 208 67 189C87 190 99 202 104 217Z" fill="#6d9479"/>
+  </g>
+
+  <!-- Tea -->
+  <g filter="url(#soft)">
+    <ellipse cx="544" cy="353" rx="86" ry="25" fill="#8f7655" opacity="0.17"/>
+    <ellipse cx="546" cy="343" rx="79" ry="22" fill="#fbf4e7"/>
+    <path d="M492 270H600L588 333C585 348 568 356 546 356C524 356 507 348 504 333Z" fill="#fdf9ef"/>
+    <ellipse cx="546" cy="271" rx="54" ry="17" fill="#e4d6bd"/>
+    <ellipse cx="546" cy="271" rx="43" ry="12" fill="url(#tea)"/>
+    <path d="M599 284C628 280 640 294 636 313C632 332 614 340 594 333" fill="none" stroke="#fdf9ef" stroke-width="11"/>
+    <path d="M599 284C621 283 628 294 625 308C622 322 611 329 596 326" fill="none" stroke="#cbb99b" stroke-width="2" opacity="0.5"/>
+    <path d="M527 244C515 228 529 218 522 202M548 241C538 224 551 214 544 196M570 245C559 228 573 218 566 201" fill="none" stroke="#fffaf0" stroke-width="4" stroke-linecap="round" opacity="0.45"/>
+  </g>
+
+  <!-- Flashcards -->
+  <g transform="rotate(-7 548 545)" filter="url(#soft)">
+    <rect x="465" y="467" width="173" height="120" rx="8" fill="#f5e5d3"/>
+    <rect x="478" y="480" width="147" height="94" rx="4" fill="none" stroke="#d1a883" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="551" y="530" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#315f54" text-anchor="middle">谢谢</text>
+    <text x="551" y="554" font-family="Arial, sans-serif" font-size="13" fill="#8a6b50" text-anchor="middle" letter-spacing="2">xiè xie</text>
+  </g>
+  <g transform="rotate(8 551 657)" filter="url(#soft)">
+    <rect x="468" y="602" width="164" height="105" rx="8" fill="#dbe8dc"/>
+    <text x="550" y="645" font-family="Georgia, 'Times New Roman', serif" font-size="35" fill="#315f54" text-anchor="middle">再见</text>
+    <text x="550" y="670" font-family="Arial, sans-serif" font-size="12" fill="#6d7f71" text-anchor="middle" letter-spacing="2">zài jiàn</text>
+  </g>
+
+  <!-- Notebook -->
+  <g transform="rotate(-3 340 427)" filter="url(#lift)">
+    <rect x="102" y="264" width="446" height="328" rx="12" fill="#d8c6aa"/>
+    <rect x="112" y="252" width="446" height="328" rx="12" fill="url(#paper)"/>
+    <path d="M332 252V580" stroke="#ddcfba" stroke-width="2"/>
+    <path d="M340 252V580" stroke="#ebdfcc" stroke-width="1"/>
+    <g fill="#b9a98f">
+      <circle cx="318" cy="280" r="4.5"/><circle cx="318" cy="312" r="4.5"/><circle cx="318" cy="344" r="4.5"/>
+      <circle cx="318" cy="376" r="4.5"/><circle cx="318" cy="408" r="4.5"/><circle cx="318" cy="440" r="4.5"/>
+      <circle cx="318" cy="472" r="4.5"/><circle cx="318" cy="504" r="4.5"/><circle cx="318" cy="536" r="4.5"/>
+    </g>
+    <text x="238" y="367" font-family="Georgia, 'Times New Roman', serif" font-size="88" fill="#2c5a50" text-anchor="middle">你好</text>
+    <text x="238" y="399" font-family="Arial, sans-serif" font-size="14" fill="#b3674a" text-anchor="middle" letter-spacing="4">NǏ HǍO</text>
+    <path d="M174 421H303" stroke="#d6c6ae" stroke-width="1.5"/>
+    <text x="174" y="451" font-family="Arial, sans-serif" font-size="12" fill="#7a8a7e" letter-spacing="1">Hello · how are you?</text>
+    <text x="174" y="480" font-family="Georgia, 'Times New Roman', serif" font-size="23" fill="#315f54">我叫知夏。</text>
+    <text x="174" y="507" font-family="Arial, sans-serif" font-size="11" fill="#9b8b75" letter-spacing="1">Wǒ jiào Zhīxià.</text>
+    <path d="M174 527H296M174 544H270" stroke="#dfd3c0" stroke-width="2" stroke-linecap="round"/>
+
+    <text x="454" y="306" font-family="Arial, sans-serif" font-size="14" fill="#b3674a" letter-spacing="2">TODAY</text>
+    <text x="454" y="338" font-family="Georgia, 'Times New Roman', serif" font-size="25" fill="#315f54">声调</text>
+    <text x="454" y="360" font-family="Arial, sans-serif" font-size="12" fill="#8d7d66">shēngdiào · tones</text>
+    <g fill="none" stroke="#9b6e55" stroke-width="2.5" stroke-linecap="round">
+      <path d="M441 394C463 394 484 394 503 394"/>
+      <path d="M441 422C455 404 466 404 479 423"/>
+      <path d="M441 450C453 438 463 462 475 450"/>
+      <path d="M441 478C451 478 461 478 471 478"/>
+    </g>
+    <text x="520" y="399" font-family="Arial, sans-serif" font-size="12" fill="#7a8a7e">mā</text>
+    <text x="520" y="427" font-family="Arial, sans-serif" font-size="12" fill="#7a8a7e">má</text>
+    <text x="520" y="455" font-family="Arial, sans-serif" font-size="12" fill="#7a8a7e">mǎ</text>
+    <text x="520" y="483" font-family="Arial, sans-serif" font-size="12" fill="#7a8a7e">mà</text>
+    <rect x="441" y="508" width="86" height="30" rx="15" fill="#dbe8dc"/>
+    <text x="484" y="528" font-family="Arial, sans-serif" font-size="11" fill="#315f54" text-anchor="middle">practice ✦</text>
+  </g>
+
+  <!-- Pencil -->
+  <g transform="rotate(24 398 677)" filter="url(#soft)">
+    <rect x="326" y="660" width="230" height="16" rx="3" fill="#d8896b"/>
+    <path d="M556 660L586 668L556 676Z" fill="#e8c99a"/>
+    <path d="M575 665.5L586 668L575 670.5Z" fill="#3b3a33"/>
+    <rect x="326" y="660" width="24" height="16" fill="#e8c99a"/>
+    <rect x="350" y="660" width="7" height="16" fill="#c7b18e"/>
+  </g>
+
+  <!-- Small eraser and clips -->
+  <g filter="url(#soft)">
+    <rect x="448" y="733" width="78" height="35" rx="8" fill="#7aa38a"/>
+    <rect x="448" y="733" width="26" height="35" rx="8" fill="#f5ead8"/>
+    <path d="M544 747C560 735 574 738 583 751C571 765 554 767 541 758" fill="none" stroke="#c7a05f" stroke-width="3"/>
+  </g>
+
+  <!-- Tiny sprig -->
+  <g fill="none" stroke="#4e7c63" stroke-width="2" opacity="0.55">
+    <path d="M77 509C89 478 109 459 136 450"/>
+    <path d="M103 478C94 461 97 445 111 434C120 451 119 466 110 478"/>
+    <path d="M117 465C117 445 127 431 143 426C146 446 136 460 121 467"/>
+  </g>
+</svg>
